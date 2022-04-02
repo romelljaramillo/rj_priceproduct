@@ -243,6 +243,12 @@ class Rj_PriceProduct extends Module
     }
 
 
+    /**
+     * Devuelve el precio ya calculado
+     *
+     * @param float $price
+     * @return float
+     */
     public static function incrementPriceRoanja($price)
     {
         $price_increment = (float)Configuration::get('RJ_PRICE_INCREMENT', true);
